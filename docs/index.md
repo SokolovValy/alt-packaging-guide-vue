@@ -11,10 +11,10 @@ hero:
       text: Документация
       link: /introduction
     - theme: brand
-      text: Markdown Examples
+      text: Процедура Join
       link: /markdown-examples
-    - theme: alt
-      text: API Examples
+    - theme: brand
+      text: Примеры
       link: /api-examples
 
 features:
