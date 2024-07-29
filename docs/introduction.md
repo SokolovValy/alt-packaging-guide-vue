@@ -17,8 +17,6 @@ https://alt-packaging-guide.github.io/alt-packaging-guide.pdf.
 
 * Отображение файловой структуры будет представлено следующим образом:
 
-+
-
 ```bash
 $ tree ~/RPM/
 /home/user/RPM/
@@ -35,8 +33,6 @@ $ tree ~/RPM/
 ```
 
 * В дальнейшем вывод команд будет продемонстрирован следующим образом:
-
-+
 
 ```txt
 Name:           bello
@@ -60,7 +56,6 @@ Summary:
 
 ```bash
 # control sudowheel enabled
-
 ```
 
 ## Вклад в руководство

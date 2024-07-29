@@ -142,10 +142,8 @@ drwxr-xr-x 8 sova domain users 4096 дек 12 04:31 .git
 
 В каталоге .gear откроем файл rules.(Аналогично для всех трёх проектов) Заполним его следующим содержимым:
 
-```
-
+```yml
 tar: .
-
 ```
 
 Строка указывает, что проект будет упакован в .tar архив.  На этом этапе редактирование rules заканчивается.
@@ -156,7 +154,7 @@ tar: .
 
 Заполнив данные секции, заголовок spec-файла bello примет вид:
 
-```spec
+```yml
 Name: bello
 Version: 0.1
 Release: alt1
@@ -178,7 +176,7 @@ BuildArch: noarch
 
 Начнём с заполнения полей %description и %prep
 
-```spec
+```yml
 %description
 The long-tail description for our Hello World Example implemented in
 bash script.
@@ -195,7 +193,7 @@ bash script.
 
 Секция %files
 
-```spec
+```yml
 %files
 %doc LICENSE
 %_bindir/%name
@@ -205,7 +203,7 @@ bash script.
 
 Секция %changelog. Здесь описаны изменения внесённые в ПО, патчи, изменения методологии сборки
 
-```spec
+```yml
 %changelog
 * Mon  date name <email@adress.com> 0.1-alt1
 - First bello package
@@ -213,7 +211,7 @@ bash script.
 
 После всех преобразований .spec файл будет выглядеть следующим образом:
 
-```spec
+```yml
 Name: bello
 Version: 0.1
 Release: alt1
@@ -291,7 +289,7 @@ Wrote: /usr/src/RPM/RPMS/noarch/bello-0.1-alt1.noarch.rpm (w2.lzdio)
 
 Заполнив данные секции, заголовок spec-файла pello примет вид:
 
-```spec
+```yml
 Name: pello
 Version: 0.1.1
 Release: alt1
@@ -313,7 +311,7 @@ BuildArch: noarch
 
 **Начнём с заполнения полей %description и %prep**.
 
-```spec
+```yml
 %prep
 %setup -q
 
@@ -375,7 +373,7 @@ install -m 0644 %name.py %buildroot%_libexecdir/%name/
 
 После всех изменений spec-файл примет следующий вид. 
 
-```spec
+```yml
 Name: pello
 Version: 0.1.1
 Release: alt1
@@ -492,7 +490,7 @@ install:
 
 В заголовке или "шапке" .spec файла описаны следующие поля:
 
-```spec
+```yml
 Name: pello
 Version: 0.1.1
 Release: alt1

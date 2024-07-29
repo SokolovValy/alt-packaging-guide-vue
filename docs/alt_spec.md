@@ -6,7 +6,7 @@ Spec-файл можно рассматривать как "инструкцию
 
 Данный пример взять из [ALT Linux Wiki](https://www.altlinux.org/SampleSpecs/program).
 
-```
+```yml
 Name: sampleprog
 Version: 1.0
 Release: alt1
@@ -82,7 +82,6 @@ It contains most of usual tags and constructions used in such specfiles.
 ```bash
 $ rpm -q rpmdevtools 
 rpmdevtools-8.10-alt2.noarch
-
 ```
 
 Здесь ``rpmdevtools`` - это имя пакета, ``8.10`` - версия, а ``alt2`` - релиз. Последний маркер ``noarch`` - сведения об архитектуре.
@@ -121,7 +120,7 @@ rpmdevtools-8.10-alt2.noarch
 
 "Каркас" файла спецификации с кратким описанием составляющих:
 
-```
+```yml
 Name: mypackage
 Version: 1.0
 Release: 1

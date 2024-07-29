@@ -36,7 +36,6 @@ $ rpm -ql rpmdevtools | grep bin
 /usr/bin/rpmdev-wipetree
 /usr/bin/rpminfo
 /usr/bin/rpmls
-
 ```
 
 Для получения дополнительной информации о вышеуказанных утилитах см. их страницы руководства или диалоговые окна справки.
@@ -54,7 +53,6 @@ $ tree ~/rpmbuild/
 |-- SOURCES
 |-- SPECS
  -- SRPMS
-
 ```
 
 Описание созданных каталогов:
@@ -89,7 +87,7 @@ $ tree ~/rpmbuild/
 
 Итак, если Вы воспользовались утилитой `rpmdev-setuptree`, а не создали дерево каталогов вручную, обрате внимание на файл `~/home/.rpmmacros`:
 
-```
+```yml
 %_topdir<------>%homedir/RPM
 #%_tmppath<---->%homedir/tmp
 
@@ -105,7 +103,7 @@ $ tree ~/rpmbuild/
 
 В файле появилась секция `%__arch_install_post`. Данную секцию необходимо удалить, вернув файл к исходному состоянию, иначе процесс сборки будет завершаться с ошибкой. 
 
-```
+```yml
 %_topdir<------>%homedir/RPM
 #%_tmppath<---->%homedir/tmp
 

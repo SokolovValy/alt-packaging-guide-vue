@@ -267,7 +267,6 @@ $ rpmlint ~/rpmbuild/SRPMS/cello-1.0-1.el7.src.rpm
 cello.src: W: invalid-url URL: https://www.example.com/cello HTTP Error 404: Not Found
 cello.src: W: invalid-url Source0: https://www.example.com/cello/releases/cello-1.0.tar.gz HTTP Error 404: Not Found
 1 packages and 0 specfiles checked; 0 errors, 2 warnings.
-
 ```
 
 Наблюдения:
