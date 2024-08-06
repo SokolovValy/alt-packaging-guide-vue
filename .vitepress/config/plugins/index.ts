@@ -1,0 +1,1 @@
+export { vitepressSearchOptions } from './vitepress-search'

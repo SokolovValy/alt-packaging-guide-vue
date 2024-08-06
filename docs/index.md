@@ -1,21 +1,19 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 hero:
-  name: "ALT Packaging Guide"
-  text: "Guide to building RPM packages for ALT distributions"
-  tagline: My great project tagline
+  name: "ALT"
+  text: 'Packaging Guide'
+  tagline: Библиотека знаний о сборке пакетов с помощью инфраструктуры операционных систем семейства «Альт»
   actions:
     - theme: brand
       text: Документация
-      link: /introduction
-    - theme: brand
+      link: start/introduction
+    - theme: alt
       text: Процедура Join
-      link: /markdown-examples
-    - theme: brand
+      link: join/
+    - theme: alt
       text: Примеры
-      link: /api-examples
+      link: case/example/
 
 features:
   - title: Feature A
@@ -24,5 +22,17 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+sponsors:
+  introtext: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
+  collections:
+    - tier: Организационная структура
+      size: big
+      items:
+        - name: ALT Linux Team
+          img: ./alt-linux-team.png
+          url: https://packages.altlinux.org/ru/sisyphus
+        - name: BaseALT
+          img: ./basealt.png
+          url: https://www.basealt.ru
 ---
 
