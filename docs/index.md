@@ -22,6 +22,10 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+teams:
+  title: Участники
+  moreText: Все участники
+  moreLink: projects/contributions/
 sponsors:
   introtext: Данный сервис является СПО-проектом и его поддержка и развитие зависит только от нашей совместной активности.
   collections:

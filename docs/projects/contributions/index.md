@@ -1,7 +1,6 @@
 ---
-aside: false
+layout: Contribution
+longtitle: Участники
 ---
 
 # Участники
-
-<!--@include: @.parts/blocks /constructing.md-->

@@ -1,11 +1,19 @@
 {
   "devDependencies": {
+    "@digitak/esrun": "^3.2.26",
     "@nolebase/ui": "^2.4.0",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.4.0",
-    "vitepress": "^1.2.3"
+    "@nolebase/vitepress-plugin-git-changelog": "^2.4.0",
+    "@octokit/core": "^6.1.2",
+    "@types/node": "^22.1.0",
+    "ora": "^8.0.1",
+    "ts-node": "^10.9.2",
+    "vitepress": "^1.2.3",
+    "yargs": "^17.7.2"
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
+    "history:build": "npx esrun ./.tools/gitlog.ts",
+    "docs:dev": "npm run history:build -- --dev && vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
