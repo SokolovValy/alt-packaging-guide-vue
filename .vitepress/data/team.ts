@@ -4,28 +4,16 @@ import { gitflic } from './icons'
 
 const homeSorting = 'month, commits'
 const teamSorting = 'role, commits, month'
-const leader = {
-  'root': 'Олег Щавелев',
-  'en': 'Oleg Shchavelev'
-}
+const leader = 'Олег Щавелев'
 const limit = 6
 const developersSection = {
-  'root': {
-    title: 'Разработчики',
-    description:
-      'Люди, которые активно участвуют не только в расширении базы знаний, но и в улучшении её функционала.'
-  },
-  'en': {
-    title: 'Developers',
-    description:
-      'People who are actively involved not only in expanding the knowledge base, but also in improving its functionality.'
-  }
+  title: 'Разработчики',
+  description:
+    'Люди, которые активно участвуют не только в расширении базы знаний, но и в улучшении её функционала.'
 }
 const membersSection = {
-  'root': {
-    title: 'Авторы',
-    description: 'Люди, которые участвуют в улучшении и создании новых статей.'
-  }
+  title: 'Авторы',
+  description: 'Люди, которые участвуют в улучшении и создании новых статей.'
 }
 
 export { homeSorting, teamSorting, leader, limit, membersSection, developersSection }
