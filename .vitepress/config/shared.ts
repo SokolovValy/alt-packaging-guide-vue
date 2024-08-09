@@ -1,5 +1,6 @@
 import { defineConfigWithTheme } from 'vitepress'
 import UnoCSS from 'unocss/vite'
+import { GitChangelog, GitChangelogMarkdownSection } from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 export const shared = defineConfigWithTheme({
     srcDir: './docs',
@@ -7,7 +8,11 @@ export const shared = defineConfigWithTheme({
     cleanUrls: true,
     vite: {
         plugins: [
-            UnoCSS()
+            UnoCSS(),
+            GitChangelog({
+                repoURL: () => 'https://github.com/SokolovValy/alt-packaging-guide-vue',
+            }),
+            GitChangelogMarkdownSection()
         ],
         optimizeDeps: {
             exclude: ['@nolebase/vitepress-plugin-enhanced-readabilities/client']
