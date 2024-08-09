@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "@nolebase/ui": "^2.4.0",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.4.0",
     "vitepress": "^1.2.3"
   },
@@ -7,5 +8,8 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
+  },
+  "dependencies": {
+    "unocss": "^0.61.9"
   }
 }
