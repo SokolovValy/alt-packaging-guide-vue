@@ -12,7 +12,7 @@ import { cyan, gray, red } from 'colorette'
 const args = yargs(process.argv)
   .options({
     key: { type: 'string', default: '' },
-    repoUrl: { type: 'string', default: 'https://github.com/OlegShchavelev/ALTGnomeWiki' },
+    repoUrl: { type: 'string', default: 'https://github.com/SokolovValy/alt-packaging-guide-vue' },
     debug: { type: 'boolean', default: false },
     dev: { type: 'boolean', default: false },
   })

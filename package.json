@@ -13,7 +13,7 @@
   },
   "scripts": {
     "history:build": "npx esrun ./.tools/gitlog.ts",
-    "docs:dev": "npm run history:build -- --dev",
+    "docs:dev": "npm run history:build -- --dev && vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },

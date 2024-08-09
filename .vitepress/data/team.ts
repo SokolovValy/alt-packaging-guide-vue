@@ -18,7 +18,7 @@ const developersSection = {
   'en': {
     title: 'Developers',
     description:
-    'People who are actively involved not only in expanding the knowledge base, but also in improving its functionality.'
+      'People who are actively involved not only in expanding the knowledge base, but also in improving its functionality.'
   }
 }
 const membersSection = {
@@ -33,22 +33,21 @@ export { homeSorting, teamSorting, leader, limit, membersSection, developersSect
 
 /* Информация об участниках */
 
-export const contributions = {
-  'root': [
-    {
-      avatar: 'https://github.com/OlegShchavelev.png',
-      name: 'Олег Щавелев',
-      mapByNameAliases: ['OlegShchavelev', 'Oleg Shchavelev', 'Олег Щавелев'],
-      title: 'Разработчик, Участник',
-      links: [
-        { icon: 'github', link: 'https://github.com/OlegShchavelev' },
-        {
-          icon: {
-            svg: gitflic
-          },
-          link: 'https://gitflic.ru/user/olegshchavelev'
-        }
-      ]
-    }
-  ]
-}
+export const contributions = [
+
+  {
+    avatar: 'https://github.com/OlegShchavelev.png',
+    name: 'Олег Щавелев',
+    mapByNameAliases: ['OlegShchavelev', 'Oleg Shchavelev', 'Олег Щавелев'],
+    title: 'Разработчик, Участник',
+    links: [
+      { icon: 'github', link: 'https://github.com/OlegShchavelev' },
+      {
+        icon: {
+          svg: gitflic
+        },
+        link: 'https://gitflic.ru/user/olegshchavelev'
+      }
+    ]
+  }
+]
